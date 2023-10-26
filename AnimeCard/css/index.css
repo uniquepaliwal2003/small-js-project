@@ -1,0 +1,54 @@
+/* css Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* image is inline element */
+img{display:block;}
+/* End of Css Reset */
+/* Utility Classes */
+.nowrap{
+    white-space: nowrap;
+}
+.offscreen{
+    position:absolute;
+    left:-10000px;
+}
+/* End Utility Classes */
+body{
+    min-height: 100vh;
+}
+.hero{
+    min-height: 50vh;
+    border:2px solid black;
+    padding: 10px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.profile-pic-figure{
+    width: 45%;
+}
+.profile-pic-figure img{
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    border: 5px double rgba(0, 0, 0, 0.781);
+    border-radius: 30%;
+}
+.h1{
+    font-size: 300%;
+    color:aliceblue;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.container{
+    background-color:rgb(194, 71, 22);
+    background-image: url('../images/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center right ;
+    
+}

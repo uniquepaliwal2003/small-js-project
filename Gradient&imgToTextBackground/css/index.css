@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+}
+img{ display:block; }
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to  left , steelblue , rgba(156, 111, 27, 0.685), whitesmoke);
+}
+.something{
+        font-weight: 700;
+        font-size: 12rem;
+        background-image: url('../images/wallpaperflare.com_wallpaper\ \(5\).jpg');
+        background-position: bottom left;
+        -webkit-background-clip:text;
+        background-clip:text;
+        color: transparent;
+}

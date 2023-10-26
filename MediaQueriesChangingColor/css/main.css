@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+img{ display:block; }
+body{
+    font-size:1.5rem;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display:flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+header{
+    position: sticky;
+    top:0;
+}
+footer{
+    position:sticky;
+    bottom:0;
+}
+footer ,main , header , nav ,h1 {
+    display: grid;
+    place-content: center;
+}
+header , footer {
+    background-color: #1E293b;
+    color:whitesmoke;
+}
+nav{
+    background-color: white;
+    color:black;
+}
+header{
+    grid-template-columns: 100%;
+}
+/* || Small  */
+@media screen and ( min-width:576px ){
+    body{
+        background-color: green;
+        background-image: radial-gradient( whitesmoke , green)
+    }
+    nav{
+        display: none;
+    }
+}
+/* ||Medium */
+@media screen and ( min-width:768px ){
+    body{
+        background-color: red;
+        background-image: radial-gradient( whitesmoke , red)
+    }
+}
+/* ||Large */
+@media screen and ( min-width:992px ){
+    body{
+        background-color: gold;
+        background-image: radial-gradient( whitesmoke , gold)
+    }
+}
+/* ||Extra Large */
+@media screen and ( min-width:1200px ){
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient( whitesmoke , rebeccapurple)
+    }
+}
+/* || Landscape */
+@media screen and (max-height: 435px ) and (min-aspect-ratio:7/4) {
+    body{
+        background-color: pink;
+        background-image: radial-gradient( whitesmoke , pink);
+    }
+}
